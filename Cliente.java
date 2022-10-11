@@ -1,18 +1,18 @@
-public class ListaCliente {
+public class Cliente {
 
-Integer id;
+    Integer id;
 
-String nr_telefone;
-String nm_cliente;
-String nm_email;
-String nr_cep;
-String nm_endereco;
-String nm_bairro;
-String nm_complemento;
-String nm_cidade;
+    String nr_telefone;
+    String nm_cliente;
+    String nm_email;
+    String nr_cep;
+    String nm_endereco;
+    String nm_bairro;
+    String nm_complemento;
+    String nm_cidade;
 
 
-    public ListaCliente(Integer id,String nr_telefone, String nm_cliente, String nm_email, String nr_cep, String nm_endereco, String nm_bairro, String nm_complemento, String nm_cidade) {
+    public Cliente(Integer id, String nr_telefone, String nm_cliente, String nm_email, String nr_cep, String nm_endereco, String nm_bairro, String nm_complemento, String nm_cidade) {
         this.id = id;
         this.nr_telefone = nr_telefone;
         this.nm_cliente = nm_cliente;
