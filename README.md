@@ -2,7 +2,7 @@
 
 Atividade com finalidade de criar um sistema de cadastro de endereços, onde é armazenado as informações dentro de um Arraylist, e obtendo opções para adicionar, remover, editar novos contatos e visualizar apenas um cadastro ou todos os cadastros realizados. 
 
-**Foram utilizados nessa atividade:** 
+**Foram utilizados nessa atividade** 
 
 * Lógica de programação;
 * Orientação a objetos;
