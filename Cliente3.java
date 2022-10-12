@@ -8,7 +8,7 @@ public class Cliente3 {
 
         while (opcao != 6) {
             System.out.println();
-            System.out.println("===LISTA TELEFONICA===");
+            System.out.println("====LISTA TELEFONICA====");
             System.out.println("1 - Adicionar");
             System.out.println("2 - Remover ");
             System.out.println("3 - Editar");
