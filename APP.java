@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Cliente3 {
+public class APP {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int opcao = 0;

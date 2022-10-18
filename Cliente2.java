@@ -44,20 +44,23 @@ public class Cliente2 {
 
     }
 
-    public void apagaCliente(int id) {
+
+    public String apagaCliente(int id) {
         boolean ativo = false;
+        String resposta = "";
         for (int i = 0; i < client.size(); i++) {
             Cliente cliente = client.get(i);
             if (cliente.getId().equals(id)) {
                 client.remove(cliente);
-                System.out.println("CLIENTE EXCLUIDO COM SUCESSO !!!");
+                resposta = "CLIENTE EXCLUIDO COM SUCESSO !!!";
                 ativo = true;
             }
         }
         if (ativo) {
         } else {
-            System.out.println("NOME NAO ENCONTRADO.");
+            resposta = "NOME NAO ENCONTRADO";
         }
+        return resposta;
     }
 
     public void editarCliente(int id) {
@@ -114,7 +117,7 @@ public class Cliente2 {
         }
     }
 
-    public void buscaCliente(int id) {
+    public Cliente buscaCliente(int id) {
         for (int i = 0; i < client.size(); i++) {
             Cliente cliente = client.get(i);
             if (cliente.getId().equals(id)) {
@@ -128,10 +131,12 @@ public class Cliente2 {
                 System.out.println("Complemento: " + cliente.getNm_complemento());
                 System.out.println("Cidade: " + cliente.getNm_cidade());
                 i = client.size();
-            } else {
-                System.out.println("NOME NAO ENCONTRADO!!");
+                return cliente;
             }
+
         }
+        System.out.println("NOME NAO ENCONTRADO!!");
+        return null;
     }
 
     public void imprimeAgenda() {
@@ -139,7 +144,7 @@ public class Cliente2 {
         for (int i = 0; i < client.size(); i++) {
             Cliente cliente = client.get(i);
             if (cliente.getId().equals(cliente.id)) {
-                System.out.println("=== Cliente " + (i+1) + "# ===");
+                System.out.println("=== Cliente " + (i + 1) + "# ===");
                 System.out.println("ID: " + cliente.getId());
                 System.out.println("Telefone: " + cliente.getNr_telefone());
                 System.out.println("Nome do cliente: " + cliente.getNm_cliente());
